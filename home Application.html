@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>    
+        <style>
+    h2{background-color:white;width:50%;}
+    ul{list-style-type:none;font-size:10;}
+    footer{background-color: rgb(247, 245, 245);text-align:center;width:50%;}
+    </style>
+    </head>
+    <script>
+    function CGPA()
+    {
+    var a=document.getElementById("a").value;
+    var b=document.getElementById("b").value;
+    var c=document.getElementById("c").value;
+    var d=document.getElementById("d").value;
+    var CGPA=(parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d))/4;
+    document.getElementById("result").innerHTML="your CGPA is" + " " + CGPA;
+    }
+    </script>
+    <body style="background-color:gray">
+        <Center><h2><marquee>CGPA</marquee></h2></Center>
+        <center>
+            FIRST_SESSION<input type="text" id="a"></input><br><br>
+            SECOND_SSESSION<input type="text"id="b"></input><br><br>
+            THIRD_SESSION<input type="text"id="c"></input><br><br>
+            FOURTH_SESSION<input type="text"id="d"></input><br><br>
+            <p id="result"></p>
+            <button id="btn" onclick="CGPA()"><b>CLICK TO CALCULATE</b></button>
+            </center>
+            <ul>
+            </ul>
+            <center>
+            <footer>
+                <p><b>CGPA<br><br> 
+                    (FIRST CLASS:- 3.50---5.0)<br><br>
+                       
+                   (SECOND CLASS UPPER:- 3.0---3.49)<br><br>
+                          
+                    (SECOND CLASS LOWER:- 2.5---2.99)<br><br>
+                         
+                    (THIRD CLASS:- 1.5---2.49)<br><br>
+                      
+                    (PASS:- 1.0---1.49)<br><br>
+                   </b></p>
+            </footer>
+        </center>
+    </body>
+    <script>    
+    
+    
+    </script>
+    </html>
